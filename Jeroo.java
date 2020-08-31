@@ -5,7 +5,59 @@
 public class Jeroo extends JerooBase {
 
     // Put your own methods here    
-    
+public void setupBowling() {
+  firstRow();
+  switchRowRTSD();
+  secondRow();
+  switchRowLTSD();
+  thirdRow();
+  switchRowRTSD();
+  plant();
+}
+public void firstRow() {
+  turn(RIGHT);
+  hop();
+  turn(LEFT);
+  hop();
+  plant();
+  hop();
+  hop();
+  plant();
+  hop();
+  hop();
+  plant();
+  hop();
+  hop();
+  plant();
+}
+public void switchRowRTSD() {
+  turn(RIGHT);
+  hop();
+  turn(RIGHT);
+  hop();
+}
+
+public void secondRow() {
+  plant();
+  hop();
+  hop();
+  plant();
+  hop();
+  hop();
+  plant();
+}
+public void switchRowLTSD() {
+  turn(LEFT);
+  hop();
+  turn(LEFT);
+  hop();
+}
+public void thirdRow() {
+  plant();
+  hop();
+  hop();
+  plant();
+}
     
 
 
